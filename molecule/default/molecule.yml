@@ -7,15 +7,13 @@ lint:
   name: yamllint
 platforms:
   - name: docker
-    image: openmicroscopy/centos-systemd-ip
-    image_version: latest
+    image: centos/systemd:latest
     privileged: true
     command: /sbin/init
     ansible_groups:
       - docker-hosts
   - name: docker-inactive
-    image: centos
-    image_version: 7
+    image: centos:7
     ansible_groups:
       - docker-hosts
 provisioner:
