@@ -27,7 +27,7 @@ provisioner:
         docker_storage_driver: vfs
     host_vars:
       docker:
-        docker_use_ipv4_nic_mtu: true
+        # docker_use_ipv4_nic_mtu: true
         # Latest version 17.12.1.ce-1.el7.centos has a bug that prevents
         # testing on travis: https://github.com/docker/for-linux/issues/219
         docker_version: 17.09.1.ce-1.el7.centos
